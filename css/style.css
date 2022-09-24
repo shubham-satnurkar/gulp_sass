@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 50px; }
+  .header .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 25px  16px; }
+    .header .navbar-logo {
+      font-size: 2rem;
+      color: #fff; }
+    .header .navbar-toggle {
+      display: none; }
+    .header .navbar-nav {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .header .navbar-nav .nav-item + .nav-item {
+        margin-left: 10px; }
+      .header .navbar-nav .nav-item .nav-link {
+        text-decoration: none;
+        font-size: 1.125rem;
+        color: #fff;
+        padding: 10px 15px; }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Josefin Sans", sans-serif; }
+
+.img-fluid {
+  width: 100%; }
+
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 50px 0; }
+  #main .box {
+    width: 33.33%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-family: sans-serif;
+    border-radius: 20px;
+    background-color: #fff; }
+    #main .box .head {
+      font-size: 2.625rem;
+      color: #f00;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f00; }
+    #main .box .text {
+      font-size: 1.125rem;
+      line-height: 30px;
+      color: #00f;
+      text-align: justify;
+      margin: 20px 0; }
+    #main .box .btn {
+      font-size: 1.125rem;
+      color: #fff;
+      font-weight: 600;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
+      padding: 10px 50px;
+      border-radius: 30px;
+      border: none;
+      box-shadow: 0 3px 10px black;
+      cursor: pointer; }
+  #main.show .box {
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); }
+    #main.show .box .text,
+    #main.show .box .head {
+      color: #fff; }
+
+.change-btn {
+  text-align: center; }
+  .change-btn .btn-dark {
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer; }
+  .change-btn .btn-light {
+    background-color: #e5e5e5;
+    color: #000; }
+
+.about {
+  padding: 50px 0;
+  text-align: center; }
+  .about h2 {
+    font-size: 2.25rem;
+    margin-bottom: 20px; }
+  .about p {
+    font-size: 1.125rem;
+    line-height: 30px;
+    align-items: justify; }

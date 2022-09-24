@@ -1,0 +1,27 @@
+.header{
+    background-color: rgba($black, .8);
+    min-height: 50px;
+    .navbar{
+        width: 100%;
+        display: flex;justify-content: space-between;
+        flex-wrap: wrap; align-items: center;
+        padding:25px  16px;
+
+        &-logo{
+            font-size: $fs-32;color: $white;
+        }
+
+        &-toggle{display: none;}
+        &-nav{
+            display: flex; justify-content: flex-start;
+            align-items: center;
+            .nav-item{
+                &+.nav-item{margin-left: 10px;}
+                .nav-link{
+                    text-decoration: none;font-size: $fs-18;
+                    color: $white; padding: 10px 15px;
+                }
+            }
+        }
+    }
+}
